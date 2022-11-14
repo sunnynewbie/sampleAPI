@@ -1,5 +1,5 @@
 const sharp = require('sharp');
-const { use } = require('../../app');
+const { use } = require('../..');
 const { responseData, checkPasseword, createToken, passwordGenerator } = require('../../utils/helper');
 const userModel = require('./../schema/user');
 
