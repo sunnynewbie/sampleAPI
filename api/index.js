@@ -1,7 +1,7 @@
 const express=require('express')
 const cors=require('cors');
-const userRoute=require('./routes/userRoute')
-const diaryRoute=require('./routes/diaryRoutes')
+const userRoute=require('./../routes/userRoute')
+const diaryRoute=require('./../routes/diaryRoutes')
 const { urlencoded, json } = require('body-parser');
 
 const app=express();
