@@ -1,7 +1,7 @@
 const http =require('http')
 const dotenv = require('dotenv');
 dotenv.config();
-const app=require('./app')
+const app=require('./api/index')
 const port=process.env.PORT;
 require('./database/db/db');
 const server= http.createServer(app);
