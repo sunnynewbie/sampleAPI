@@ -156,7 +156,7 @@ exports.uploadImage = (req, res, next) => {
 exports.getpostByUser=(req,res,next)=>{
    return new Promise(async (resolve,reject)=>{
     try {
-      let user= await userModel.findById({_id:req.params.id}).populate('diary');
+      let user= await userModel.find().populate('diary');
       resolve(user);
     } catch (error) {
         reject(error);

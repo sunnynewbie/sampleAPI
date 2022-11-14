@@ -21,7 +21,7 @@ const path = require('path');
 
 
 
-route.get('/getUser', verifyUser);
+route.get('/getUser', controller.getposts);
 route.get('/profile/:id', verifyUser, controller.profile);
 route.post('/signup', controller.signup);
 route.post('/login', controller.login);
