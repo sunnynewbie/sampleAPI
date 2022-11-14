@@ -10,6 +10,7 @@ app.use(cors());
 app.subscribe(urlencoded({extends:true}));
 app.use(json());
 app.use(express.static('./public'));
+
 app.use('',userRoute)
 app.use('/posts',diaryRoute)
 
