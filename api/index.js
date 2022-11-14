@@ -22,6 +22,10 @@ app.use('/posts',diaryRoute)
 
 const port=process.env.PORT;
 require('./../database/db/db');
+app.listen(port,()=>{
+    
+console.log('server connected');
+})
 const server= http.createServer(app);
 
 server.listen(port,()=>{
