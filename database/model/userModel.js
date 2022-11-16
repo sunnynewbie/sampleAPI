@@ -50,8 +50,7 @@ exports.login = (req, res, next) => {
 
             }
         } catch (error) {
-            console.log(error);
-            resolve(false, 'error', null);
+            reject(false, 'error', null);
         }
     });
 }
