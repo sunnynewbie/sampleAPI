@@ -47,6 +47,7 @@ exports.login = (req, res, next) => {
                     );
                     resolve(responseData(true, '', updateduser));
                 }
+                reject(false, 'error', {error:"Password not matched"});
 
             }
         } catch (error) {
